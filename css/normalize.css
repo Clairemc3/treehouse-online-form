@@ -23,6 +23,10 @@
   body {
     margin: 0;
   }
+
+  fieldset {
+    border: 0;
+}
   
   /**
    * Render the `main` element consistently in IE.

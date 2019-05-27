@@ -12,73 +12,89 @@
 <body>
 
     <header>
-        <div>The code review</div>
-        <div>
-            <h1>Sign up for our newsletter</h1>
-            <p>Get the latest news on how your code is doing right in your inbox</p>
-        </div>
+        <div class="main-header">
+            <h1 class="title">The code review</h1>
     </header>
 
     <main>
-        <form>
-            <fieldset>
-                <legend>Contact Information</legend>
+        <div class="container">
 
-                <label for="full_name"> Full Name</label>
-                <input type="text" id="full_name" name="full_name" placeholder="Required" required/>
+            <div class="intro">
+                <h1 class="intro_title">Sign up for our newsletter</h1>
+                <p class="intro-text">Get the latest news on how your code is doing right in your inbox</p>
+            </div>
 
-                <label for="email">Email Address</label>
-                <input type="email" id="email" name="email" placeholder="Required" required/>
+            <form>
+                <div class="form_section">
+                    <fieldset>
+                        <legend>Contact Information</legend>
 
-                <label for="phone">Phone Number</label>
-                <input type="tel" id="phone" name="phone"/>
-                
-                <label for="street_address">Street address</label>
-                <input type="text" id="street_address" name="street_address"/>
+                        <label for="full_name"> Full Name</label>
+                        <input type="text" id="full_name" name="full_name" placeholder="Required" required/>
 
-                <label for="state">State</label>
-                <select id="state" name="state">
-                    <option value="AL">Alabama</option>
-                    <option value="AK">Alaska</option>
-                    <option value="AZ">Arizona</option>
-                    <option value="AR">Arkansas</option>
-                    <option value="other">Another state</option>
-                </select>
+                        <label for="email">Email Address</label>
+                        <input type="email" id="email" name="email" placeholder="Required" required/>
 
-                <label for="zip_code">Zip Code</label>
-                <input type="text" id="zip_code" name="zip_code"/>
-            </fieldset>
+                        <label for="phone">Phone Number</label>
+                        <input type="tel" id="phone" name="phone"/>
+                        
+                        <label for="street_address">Street address</label>
+                        <input type="text" id="street_address" name="street_address"/>
 
-            <fieldset>
-                <legend>Newsletter</legend>
+                        <label for="state">State</label>
+                        <select id="state" name="state">
+                            <option value="AL">Alabama</option>
+                            <option value="AK">Alaska</option>
+                            <option value="AZ">Arizona</option>
+                            <option value="AR">Arkansas</option>
+                            <option value="other">Another state</option>
+                        </select>
 
-                <label>Select the newsletters you would like to receieve</label>
+                        <label for="zip_code">Zip Code</label>
+                        <input type="text" id="zip_code" name="zip_code"/>
+                    </fieldset>
+                </div>
 
-                <input type="checkbox" id="html" value="html" name="newsletter"/>
-                <label for="html">HTML News</label><br>
+                <div class="form_section">
+                    <fieldset>
+                        <legend>Newsletter</legend>
 
-                <input type="checkbox" id="css" value="css" name="newsletter"/>
-                <label for="css">CSS News</label><br>
+                        <label>Select the newsletters you would like to receieve</label>
+                        <label for="html">
+                            <input type="checkbox" id="html" value="html" name="newsletter"/>
+                            HTML News
+                        </label>
 
-                <input type="checkbox" id="javascript" value="javascript" name="newsletter"/>
-                <label for="javascript">Javascript News</label><br>
+                        <label for="css">
+                            <input type="checkbox" id="css" value="css" name="newsletter"/>
+                            CSS News
+                        </label>
 
-                <label>Newsletter format</label>
+                        <label for="javascript">
+                            <input type="checkbox" id="javascript" value="javascript" name="newsletter"/>
+                            Javascript News
+                        </label>
 
-                <input type="radio" id="html" value="html" name="format"/>
-                <label for="html">HTML</label><br>
+                        <label>Newsletter format</label>
 
-                <input type="radio" id="html" value="plain_text" name="format"/>
-                <label for="plain_text">Plain text</label>
+                        <label for="html">
+                            <input type="radio" id="html" value="html" name="format"/>
+                            HTML
+                        </label>
 
-                <label for="other_topics">Other topics you'd like to hear about</label>
-                <textarea id="other_topics" name="other_topics"></textarea>
+                        <label for="plain_text">
+                            <input type="radio" id="html" value="plain_text" name="format"/>
+                             Plain text
+                        </label>
 
-                <button type="submit">Sign Up</button>
-                
-                
-            </fieldset>
-        </form>
+                        <label for="other_topics">Other topics you'd like to hear about</label>
+                        <textarea id="other_topics" name="other_topics"></textarea>
+
+                        <button type="submit">Sign Up</button>
+                    </fieldset>
+                </div>
+            </form>
+        </div>
     </main>
     <footer>
         <div>Copyright The Code Review</div>

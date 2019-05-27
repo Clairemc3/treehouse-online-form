@@ -2,3 +2,102 @@
 /* ================================= 
   Base Element Styles
 ==================================== */
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Merriweather, Verdana, Geneva, Tahoma, sans-serif;
+    color: #4a4a4a;
+    line-height: 1.5;
+}
+
+
+/* ================================= 
+  Base Layout Styles
+==================================== */
+
+
+/* ---- Header ---- */
+
+.main-header {
+    background-color: #2c2c2c;
+    padding: 2em 0;
+}
+
+.title {
+    color: white;
+    text-transform: uppercase;
+    margin: auto;
+    text-align: center;
+}
+
+
+/* ---- Footer ---- */
+
+/* ---- Layout Containers ---- */
+
+.container {
+    padding-right: 1em;
+    padding-left: 1em;
+}
+
+
+/* ---- Page Elements ---- */
+
+.intro {
+    text-align: center;
+    border-bottom: 5px solid black;
+    padding-bottom: 2em;
+}
+
+
+
+/* ================================= 
+  Form styles
+==================================== */
+  
+fieldset {
+    margin: 2em 0;
+    display: flex;
+    flex: 1;
+}
+
+fieldset legend {
+    font-size: 1.5em;
+    font-weight: bolder;
+}
+
+.form_section {
+    margin-top: 5px;
+    border-top: red solid 2px;
+}
+
+label {
+    margin: 1.2em 0;
+}
+
+  input::placeholder{
+      text-align: right;
+      font-style: italic;
+      font-size: 0.8em;
+      color: rgba(0,0,0,0.2);
+  }
+
+input[type=text],
+input[type=select],
+input[type=email],
+input[type=tel],
+select,
+textarea{
+    width: 100%;
+    background-color: #e8eeef;
+    border: none;
+    padding: 15px;
+}
+
+#zip_code {
+    width: 50%;
+}
+
