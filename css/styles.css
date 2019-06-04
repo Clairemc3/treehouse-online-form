@@ -25,6 +25,10 @@ button {
     font-size: 1.2em;
 }
 
+fieldset {
+    padding: 0;
+}
+
 
 /* ================================= 
   Base Layout Styles
@@ -85,50 +89,21 @@ footer {
 
 
 /* ================================= 
-  Form styles
+  Forms
 ==================================== */
-  
-.form_section {
-    margin: 2em 0;
-    display: flex;
-    flex-direction: column;
-}
+
+
+/* Form elements */
+
 
 fieldset legend {
     font-size: 1.5em;
     font-weight: bolder;
 }
 
-.form_section {
-    margin-top: 5px;
-    border-top: #2d3945 solid 2px;
-}
-
 label > input {
     margin: 0.8em 0;
 }
-
-label:empty {
-    margin-bottom: 100em;
-}
-
-legend {
-    margin-bottom: 1em;
-}
-
-input[type='checkbox'] + label{
-    background-color: #000;
-  }
-
-
-
-input::placeholder {
-      text-align: right;
-      font-style: italic;
-      font-size: 0.8em;
-      color: rgba(0,0,0,0.2);
-  }
-
 
 input[type=text],
 input[type=email],
@@ -142,14 +117,52 @@ textarea{
     padding: 15px;
 }
 
-textarea {
-    resize: none;
-}
-
 input:focus,
 select:focus {
     outline: none;
     border: 2px solid #3a4971;
+}
+
+textarea {
+    resize: none;
+}
+
+/* Form layout styles */
+
+
+.form_section {
+    margin: 2em 0;
+    display: flex;
+    flex-direction: column;
+}
+
+.form_section > legend {
+    margin-top: 1em;
+}
+
+
+.form_section {
+    margin-top: 5px;
+    border-top: #2d3945 solid 2px;
+}
+
+.form_section legend {
+    margin-bottom: 1em;
+}
+
+input::placeholder {
+      text-align: right;
+      font-style: italic;
+      font-size: 0.8em;
+      color: rgba(0,0,0,0.2);
+}
+
+.contact-fields label {
+    margin: 1em 0;
+}
+
+.label {
+    margin: 1em 0;
 }
 
 #zip_code {
@@ -161,7 +174,7 @@ select:focus {
   Media Queries
 ==================================== */
 
-/* >Desktop Size */
+/* Desktop Size */
 @media (min-width: 768px) {
 
     .container {
@@ -186,7 +199,7 @@ select:focus {
     .contact-fields input[type=email],
     .contact-fields select{
         flex: 1 0 80%;
-        margin-bottom: 2em;
+        margin: 1em 0;
     }
 
     .contact-fields legend {
@@ -194,17 +207,8 @@ select:focus {
     }
 
     #zip_code {
-
+        /* @TODO make zip code 50% */
     }
-    
-
-
-.test {
-    /* display: flex;
-    flex-direction: row;
-    flex-wrap: wrap; */
-}
-
 
 }
 
