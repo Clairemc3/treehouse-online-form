@@ -173,6 +173,25 @@ input::placeholder {
 }
 
 
+/* Form transtions */
+input[type=text]:focus,
+input[type=email]:focus,
+input[type=tel]:focus,
+textarea:focus { 
+    background: linear-gradient(to bottom,  #e8eeef 50%, white 50%);
+    background-size: 100% 200%;
+
+}
+input[type=text]:focus,
+input[type=email]:focus,
+input[type=tel]:focus,
+textarea:focus { 
+    transition: all .15s ease-out;
+    background-position: 0 -100%;
+}
+
+
+
 /* =================================
   Media Queries
 ==================================== */
