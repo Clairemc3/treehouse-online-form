@@ -88,6 +88,7 @@ footer {
     text-align: center;
     border-bottom: 5px solid #2d3945;
     padding: 2em 0;
+    margin-bottom: 5px;
 }
 
 .intro_title {
@@ -111,6 +112,9 @@ footer {
 fieldset legend {
     font-size: 1.5em;
     font-weight: bolder;
+    border-top: #2d3945 solid 2px;
+    width: 100%;
+    padding-top:1em;
 }
 
 label > input {
@@ -144,7 +148,6 @@ textarea {
 
 .form_section {
     margin: 5px 0 2em 0;
-    border-top: #2d3945 solid 2px;
     display: flex;
     flex-direction: column;
 }
@@ -180,7 +183,7 @@ input[type=tel],
 textarea { 
     background: linear-gradient(to bottom,  #e8eeef 50%, white 50%);
     background-size: 100% 200%;
-    transition: all .15s ease-out;
+    transition: background-position .15s ease-out;
 
 }
 input[type=text]:focus,
